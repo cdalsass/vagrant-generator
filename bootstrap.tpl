@@ -30,7 +30,7 @@ a2enmod rewrite
 
 ###### configuration
 
-echo "create database {{environment['dbname']}}" | mysql --user=root --password=root
+echo "create database {{environment['database']}}" | mysql --user=root --password=root
 
 # run apache under vagrant user to avoid issues with permissions. 
 sudo perl -pi -e 's/APACHE_RUN_USER=www-data/APACHE_RUN_USER=vagrant/' /etc/apache2/envvars
