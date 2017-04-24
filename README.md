@@ -25,3 +25,22 @@ python vagrant-generator.py -h
 ```
 
 to display all the current options.
+
+# Generating a new site/app
+
+Copy files into your local site folder, modifying the env-local.yml and bootstrap.tpl to match your target environment.
+
+```
+cp Vagrantfile bootstrap.tpl env-local.yml [local site folder - keep out of public directories]
+```
+
+Generate your bootstrap.sh
+
+```
+python vagrant-generator.py --environment=local --render
+```
+Vagrant up!
+
+```
+vagrant up
+```
