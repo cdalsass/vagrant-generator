@@ -1,0 +1,9 @@
+---
+'environment':
+    name: "local"
+    site: "customer1"
+    apache_root: "/vagrant"
+    log_dir: "/var/log/apache2"
+    env_variable: "local.customer1.com"
+    server_name: "local"
+    database: "dbname"
