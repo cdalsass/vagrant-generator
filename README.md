@@ -1,6 +1,6 @@
-# Using devsite-gen.py
+# Using vagrant-generator.py
 
-In order to use devsite-gen.py, you must first use have python 2.7 on your system (don't install Python 3!)
+In order to use vagrant-generator.py, you must first use have python 2.7 on your system (don't install Python 3!)
 
 Once python is installed, you will need pip, and then you will need to install the requirements from the requirements.txt file.
 
@@ -21,7 +21,7 @@ pip install -r requirements.txt
 you can then execute the script with:
 
 ```
-python devsite-gen.py -h
+python vagrant-generator.py -h
 ```
 
 to display all the current options.
